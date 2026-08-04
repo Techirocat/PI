@@ -1,2 +1,5 @@
 (library
- (name PI))
+ (name PI)
+ (libraries zarith))
+
+(include_subdirs qualified)
