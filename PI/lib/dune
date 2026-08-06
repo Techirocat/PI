@@ -1,5 +1,36 @@
 (library
- (name PI)
- (libraries zarith))
+  (name PI)
+  (modules PI)
+  (libraries zarith)) 
 
 (include_subdirs qualified)
+
+(executable
+ (name Jonh_Machin)
+ (modules Jonh_Machin)
+ (libraries zarith PI))
+
+(executable
+ (name Madhava)
+ (modules Madhava)
+ (libraries zarith PI))
+
+(executable
+ (name Jurij_Vega)
+ (modules Jurij_Vega)
+ (libraries zarith PI))
+
+(executable
+ (name Zacharias_Dase)
+ (modules Zacharias_Dase)
+ (libraries zarith PI))
+
+(executable
+ (name William_Shanks)
+ (modules William_Shanks)
+ (libraries zarith PI))
+
+(executable
+ (name William_Rutherford)
+ (modules William_Rutherford)
+ (libraries zarith PI))
