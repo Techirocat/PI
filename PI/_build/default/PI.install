@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/PI/META"
+  "_build/install/default/lib/PI/dune-package"
+  "_build/install/default/lib/PI/opam"
+]
+bin: [
+  "_build/install/default/bin/PI"
+]
