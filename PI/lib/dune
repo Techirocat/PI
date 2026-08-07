@@ -6,6 +6,21 @@
 (include_subdirs qualified)
 
 (executable
+ (name Arquimedes)
+ (modules Arquimedes)
+ (libraries zarith PI))
+
+(executable
+ (name Liu_Hui)
+ (modules Liu_Hui)
+ (libraries zarith PI))
+
+(executable
+ (name Al_Kashi)
+ (modules Al_Kashi)
+ (libraries zarith PI))
+
+(executable
  (name Jonh_Machin)
  (modules Jonh_Machin)
  (libraries zarith PI))
