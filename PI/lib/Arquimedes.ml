@@ -25,8 +25,8 @@ let rec calc n a b =
         calc (n-1) a' b'
 
 let () =
-  let rounds = 20 in
+  let rounds = 6 in
 
   let min_pi, max_pi = calc rounds first_a1 first_b1 in
-  Printf.printf "Minimum: %.10f\n" min_pi;
-  Printf.printf "Maximum: %.10f\n" max_pi
+  Printf.printf "Minimum: %.2f\n" min_pi;
+  Printf.printf "Maximum: %.2f\n" max_pi

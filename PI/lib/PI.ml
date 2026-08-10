@@ -55,3 +55,41 @@ let arctan x n =
       else 
         aux next_pow (i + 1) (Q.add sum term)
   in aux x 1 Q.zero 
+
+let truncate x (p : int) =
+    let alg = Z.log2 (Q.den x) in
+    let diff = alg - p in
+    if diff <= 0 then
+        x
+    else
+        let n = Q.num x in
+        let d = Q.den x in
+        let divi = Z.pow (Z.of_int 2) diff in
+        let x' = Q.make (Z.div n divi) (Z.div d divi) in
+        x'
+
+(** Heron's Method *)
+let sqrt x n p =
+    let first = Q.div x (Q.of_int 2) in
+    let rec aux curr it = 
+        if it <= 0 then
+            curr
+        else
+            let next = Q.div (Q.add (Q.div x curr) curr) (Q.of_int 2) in
+            aux (truncate next p) (it-1)
+    in
+    aux first n
+
+let pow b (e : int) =
+    if e < 0 then
+        invalid_arg "Not implemented"
+    else if e = 0 then
+        Q.one
+    else
+        let rec aux acc mult i =
+            if i <= 0 then
+                acc
+            else
+                aux (Q.mul acc mult) mult (i-1) 
+        in
+        aux Q.one b e

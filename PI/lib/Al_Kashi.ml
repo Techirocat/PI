@@ -1,14 +1,29 @@
+let sqrt' x = PI.sqrt x 500 500
+
 let rec aux n c =
     if n <= 0 then
         c
     else 
-        let c' = Float.sqrt (2. -. Float.sqrt (4. -. (c *. c))) in
+        let c' = sqrt' (Q.sub (Q.of_int 2) (sqrt' (Q.sub (Q.of_int 4) (Q.mul c c)))) in
         aux (n-1) c'
 
-let calc n = 3. *. Float.pow 2. (float n) *. (aux n 1.)
+let ( *: ) a b = Q.mul a b
+
+let calc n = (Q.of_int 3) *: (Q.mul_2exp Q.one n) *: (aux n Q.one)
 
 let () =
-  let rounds = 20 in
+  let n = 16 in
+  let rounds = 30 in
 
   let pi = calc rounds in
-  Printf.printf "%.10f\n" pi;
+
+  let num = Q.num pi in 
+  let den = Q.den pi in 
+
+  let d = Z.pow (Z.of_int 10) n in 
+
+  let pi' = Z.div (Z.mul num d) den in 
+  let decimas = String.sub (Z.to_string pi') 1 n in 
+
+  PI.check decimas;
+  Printf.printf "3.%s\n" decimas

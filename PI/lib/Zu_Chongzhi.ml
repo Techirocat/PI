@@ -16,4 +16,4 @@ let () =
   let split_count = 9 in
 
   let pi = calc split_count in
-  Printf.printf "%.3f\n" pi;
+  Printf.printf "%.7f\n" pi;

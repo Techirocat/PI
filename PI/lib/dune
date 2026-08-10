@@ -16,8 +16,18 @@
  (libraries zarith PI))
 
 (executable
+ (name Zu_Chongzhi)
+ (modules Zu_Chongzhi)
+ (libraries zarith PI))
+
+(executable
  (name Al_Kashi)
  (modules Al_Kashi)
+ (libraries zarith PI))
+
+(executable
+ (name Ludolph_Van_Ceulen)
+ (modules Ludolph_Van_Ceulen)
  (libraries zarith PI))
 
 (executable
