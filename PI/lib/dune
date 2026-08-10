@@ -41,6 +41,11 @@
  (libraries zarith PI))
 
 (executable
+ (name Snell)
+ (modules Snell)
+ (libraries zarith PI))
+
+(executable
  (name Jurij_Vega)
  (modules Jurij_Vega)
  (libraries zarith PI))
