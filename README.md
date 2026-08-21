@@ -4,14 +4,14 @@
 | ------------------------|:-------------:| :-------------------:| -----: |
 | Egípcios                | 2000? a.C.    | 1                    | [code](./PI/lib/aproximacoes/egipto.ml)   |
 | Antigos Babilônios      | 2000? a.C.    | 1                    | [code](./PI/lib/aproximacoes/babilonia.ml)   |
-| Arquimedes              | 250 a.C       | 3                    | code   |
-| Liu Hui                 | 263           | 5                    | code   |
-| Zu Chongzhi             | 480           | 7                    | code   |
+| Arquimedes              | 250 a.C       | 3                    | [code](./PI/lib/Arquimedes.ml)   |
+| Liu Hui                 | 263           | 5                    | [code](./PI/lib/Liu_Hui.ml)   |
+| Zu Chongzhi             | 480           | 7                    | [code](./PI/lib/Zu_Chongzhi.ml)   |
 | Madhava de Sangamagrama | 1400          | 10                   | [code](./PI/lib/Madhava.ml)   | 
 | Alcaxi                  | 1424          | 17                   | code   |
-| Ludolph van Ceulen      | 1596          | 20                   | code   | 
-| Ludolph van Ceulen      | 1615          | 32                   | code   |
-| Abraham Sharp           | 1699          | 71                   | code   |
+| Ludolph van Ceulen      | 1596          | 20                   | [code](./PI/lib/Ludolph_Van_Ceulen.ml)   | 
+| Ludolph van Ceulen      | 1615          | 32                   | [code](./PI/lib/Ludolph_Van_Ceulen.ml)   |
+| Abraham Sharp           | 1699          | 71                   | [code](./PI/lib/Abraham_Sharp.ml)   |
 | John Machin             | 1706          | 100                  | [code](./PI/lib/Jonh_Machin.ml)   |
 | Thomas Fantet de Langny | 1719          | 112                  | code   |
 | Juri Vega               | 1789          | 126                  | [code](./PI/lib/Jurij_Vega.ml)   |
