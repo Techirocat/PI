@@ -75,3 +75,9 @@
  (name D_F_Ferguson)
  (modules D_F_Ferguson)
  (libraries zarith PI))
+
+
+(executable
+ (name Thomas_Clausen)
+ (modules Thomas_Clausen)
+ (libraries zarith PI))
