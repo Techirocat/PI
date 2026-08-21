@@ -69,3 +69,9 @@
  (name Abraham_Sharp)
  (modules Abraham_Sharp)
  (libraries zarith PI))
+
+
+(executable
+ (name D_F_Ferguson)
+ (modules D_F_Ferguson)
+ (libraries zarith PI))
