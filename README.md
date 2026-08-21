@@ -22,7 +22,7 @@
 | Lehmann                 | 1853          | 261                  | code   |
 | Richter                 | 1855          | 500                  | code   |
 | William Shanks          | 1874          | 527                  | [code](./PI/lib/William_Shanks.ml)   |
-| D. F. Ferguson          | 1946          | 620                  | code   |
-| D. F. Ferguson          | 1947          | 710                  | code   |
-| D. F. Ferguson          | 1947          | 808                  | code   |
-| D. F. Ferguson          | 1949          | 1120                 | code   |
+| D. F. Ferguson          | 1946          | 620                  | [code](./PI/lib/D_F_Ferguson.ml)   |
+| D. F. Ferguson          | 1947          | 710                  | [code](./PI/lib/D_F_Ferguson.ml)   |
+| D. F. Ferguson          | 1947          | 808                  | [code](./PI/lib/D_F_Ferguson.ml)   |
+| D. F. Ferguson          | 1949          | 1120                 | [code](./PI/lib/D_F_Ferguson.ml)   |
