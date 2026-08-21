@@ -81,3 +81,15 @@
  (name Thomas_Clausen)
  (modules Thomas_Clausen)
  (libraries zarith PI))
+
+
+(executable
+ (name BBP)
+ (modules BBP)
+ (libraries zarith PI))
+
+
+(executable
+ (name BBP_no_zarith)
+ (modules BBP_no_zarith)
+ (libraries zarith PI))
