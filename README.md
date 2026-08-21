@@ -18,7 +18,7 @@
 | Juri Vega               | 1794          | 136                  | [code](./PI/lib/Jurij_Vega.ml)   |
 | William Rutherford      | 1841          | 152                  | [code](./PI/lib/William_Rutherford.ml)   |
 | Zacharias Dase          | 1844          | 200                  | [code](./PI/lib/Zacharias_Dase.ml)   |
-| Thomas Clausen          | 1847          | 248                  | code   |
+| Thomas Clausen          | 1847          | 248                  | [code](./PI/lib/Thomas_Clausen.ml)   |
 | Lehmann                 | 1853          | 261                  | code   |
 | Richter                 | 1855          | 500                  | code   |
 | William Shanks          | 1874          | 527                  | [code](./PI/lib/William_Shanks.ml)   |
