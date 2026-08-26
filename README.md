@@ -26,3 +26,11 @@
 | D. F. Ferguson          | 1947          | 710                  | [code](./PI/lib/D_F_Ferguson.ml)   |
 | D. F. Ferguson          | 1947          | 808                  | [code](./PI/lib/D_F_Ferguson.ml)   |
 | D. F. Ferguson          | 1949          | 1120                 | [code](./PI/lib/D_F_Ferguson.ml)   |
+
+
+## Outros Algoritmos
+
+- O algoritmo de Chudnovsky foi utilizado para calcular o recorde mundial de π com 100 triliões de dígitos: [Chudnovsky - code](./PI/lib/Chudnovsky.ml)
+- O algoritmo de Bailey-Borwein-Plouffe permite calcular o n-enésimo dígito hexadecimal de Pi sem precisar calcular os dígitos anteriores: [BBP - code](./PI/lib/BBP.ml)
+- O algoritmo de Monte Carlo utiliza esstatística e probabilidade para estimar o valor de PI: [Monte Carlo - code](./PI/lib/Monte_Carlo.ml)
+

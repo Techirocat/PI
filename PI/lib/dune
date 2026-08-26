@@ -93,3 +93,15 @@
  (name BBP_no_zarith)
  (modules BBP_no_zarith)
  (libraries zarith PI))
+
+
+(executable
+ (name Monte_Carlo)
+ (modules Monte_Carlo)
+ (libraries zarith PI))
+
+
+(executable
+ (name Chudnovsky)
+ (modules Chudnovsky)
+ (libraries zarith PI))

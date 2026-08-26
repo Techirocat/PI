@@ -93,3 +93,17 @@ let pow b (e : int) =
                 aux (Q.mul acc mult) mult (i-1) 
         in
         aux Q.one b e
+
+
+let print_pi_Q pi n =
+  let num = Q.num pi in 
+  let den = Q.den pi in 
+  
+  let d = Z.pow (Z.of_int 10) n in 
+
+  let pi_z = Z.div (Z.mul num d) den in 
+  let pi_str = Z.to_string pi_z in 
+  let decimas = String.sub pi_str 1 n in 
+
+  Printf.printf "3.%s\n" decimas
+
