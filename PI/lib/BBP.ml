@@ -1,5 +1,5 @@
 (* https://observablehq.com/@rreusser/computing-with-the-bailey-borwein-plouffe-formula *)
-
+(* https://www.davidhbailey.com/dhbpapers/bbp-alg.pdf *)
 
 let s j n =
   let j = Z.of_int j in  
@@ -33,23 +33,26 @@ let s j n =
 
   left +. right
 
+    (* d -> posção; n -> número de digitos (max = 9)*)
+    let piBBP d n = 
+    let new_d = Z.sub (Z.of_string d) Z.one in 
 
-  let piBBP d n = (* d -> posção; n -> número de digitos*)
-  let new_d = Z.sub (Z.of_string d) Z.one in 
+    if Z.leq new_d Z.minus_one || n <= 0 || n > 9 then failwith "Argumento Invalido"
+    else
 
-  let s1 = s 1 new_d in
-  let s4 = s 4 new_d in 
-  let s5 = s 5 new_d in 
-  let s6 = s 6 new_d in  
+      let s1 = s 1 new_d in
+      let s4 = s 4 new_d in 
+      let s5 = s 5 new_d in 
+      let s6 = s 6 new_d in  
 
-  let a = (4.0 *. s1) -. (2.0 *. s4) -. s5 -. s6 in 
-  let a = a -. floor a in 
+      let a = (4.0 *. s1) -. (2.0 *. s4) -. s5 -. s6 in 
+      let a = a -. floor a in 
 
-  let m = (16.0 ** (float_of_int n)) *. a in 
-  int_of_float m
+      let m = (16.0 ** (float_of_int n)) *. a in 
+      int_of_float m
 
 
 
 let () =
-  let m = piBBP "0" 10 in 
+  let m = piBBP "100000000" 9 in 
   Printf.printf "%X\n" m
