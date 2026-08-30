@@ -31,8 +31,8 @@
  (libraries zarith PI))
 
 (executable
- (name Jonh_Machin)
- (modules Jonh_Machin)
+ (name John_Machin)
+ (modules John_Machin)
  (libraries zarith PI))
 
 (executable
@@ -109,4 +109,15 @@
 (executable
  (name Leibniz)
  (modules Leibniz)
+ (libraries zarith PI))
+
+
+(executable
+ (name Nilkantha)
+ (modules Nilkantha)
+ (libraries zarith PI))
+
+(executable
+ (name John_Wallis)
+ (modules John_Wallis)
  (libraries zarith PI))
