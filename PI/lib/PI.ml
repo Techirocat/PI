@@ -107,3 +107,20 @@ let print_pi_Q pi n =
 
   Printf.printf "3.%s\n" decimas
 
+
+
+let get_decimas x casas =
+  let num = Q.num x in 
+  let den = Q.den x in 
+
+  let resto = Z.abs (Z.rem num den) in
+
+  let d = Z.pow (Z.of_int 10) casas in 
+  let digitos = Z.div (Z.mul resto d) den in 
+  let str = Z.to_string digitos in
+  
+  let zeros = casas - String.length str in
+  if zeros > 0 then
+    String.make zeros '0' ^ str
+  else
+    str

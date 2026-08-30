@@ -105,3 +105,8 @@
  (name Chudnovsky)
  (modules Chudnovsky)
  (libraries zarith PI))
+
+(executable
+ (name Leibniz)
+ (modules Leibniz)
+ (libraries zarith PI))

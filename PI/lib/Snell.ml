@@ -28,13 +28,6 @@ let () =
   let min_pi, max_pi = calc rounds first_a first_b in
   let pi = (((?= 2) *: min_pi) +: max_pi) /: (?= 3) in
 
-  let num = Q.num pi in 
-  let den = Q.den pi in 
-
-  let d = Z.pow (Z.of_int 10) n in 
-
-  let pi' = Z.div (Z.mul num d) den in 
-  let decimas = String.sub (Z.to_string pi') 1 n in 
-
-  PI.check decimas;
-  Printf.printf "3.%s\n" decimas
+  let decimas = PI.get_decimas pi n in 
+  PI.check decimas; 
+  PI.print_pi_Q pi n

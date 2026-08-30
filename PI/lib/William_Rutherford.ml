@@ -10,19 +10,10 @@ let () =
 
   let pi1 = Q.sub (Q.mul (Q.of_int 4) arctan5) arctan70 in 
   let pi2 = Q.add arctan99 pi1 in 
-  let pi3 = Q.mul pi2 (Q.of_int 4) in 
+  let pi = Q.mul pi2 (Q.of_int 4) in 
 
-  let num = Q.num pi3 in 
-  let den = Q.den pi3 in 
-
-  let d = Z.pow (Z.of_int 10) n in 
-
-  let pi = Z.div (Z.mul num d) den in 
-
-  let decimas = String.sub (Z.to_string pi) 1 n in 
+  let decimas = PI.get_decimas pi n in 
   PI.check decimas;
-
-  Printf.printf "3.%s\n" (String.sub (Z.to_string pi) 1 n)
-  
+  PI.print_pi_Q pi n
   
 

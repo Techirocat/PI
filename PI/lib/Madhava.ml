@@ -3,6 +3,8 @@
 utilizando a fórmula de Leibniz
 *)
 
+(* TODO: implementar novamente mas usando Zarith *)
+
 let calc n =
   let rec aux i sum = 
     if i >= n then 
