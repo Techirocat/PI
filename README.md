@@ -34,3 +34,8 @@
 - O algoritmo de Bailey-Borwein-Plouffe permite calcular o n-enésimo dígito hexadecimal de Pi sem precisar calcular os dígitos anteriores: [BBP - code](./PI/lib/BBP.ml)
 - O algoritmo de Monte Carlo utiliza esstatística e probabilidade para estimar o valor de PI: [Monte Carlo - code](./PI/lib/Monte_Carlo.ml)
 
+## Séries Infinitas
+
+- Série de Gregory-Leibniz: [code](./PI/lib/Leibniz.ml)
+- Série de Nilakantha: [code](./PI/lib/Nilkantha.ml)
+- Produto de Wallis (John Wallis): [code](./PI/lib/John_Wallis.ml)
