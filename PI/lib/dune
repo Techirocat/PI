@@ -121,3 +121,8 @@
  (name John_Wallis)
  (modules John_Wallis)
  (libraries zarith PI))
+
+(executable
+ (name Buffon)
+ (modules Buffon)
+ (libraries zarith PI))

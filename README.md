@@ -33,6 +33,8 @@
 - O algoritmo de Chudnovsky foi utilizado para calcular o recorde mundial de π com 100 triliões de dígitos: [Chudnovsky - code](./PI/lib/Chudnovsky.ml)
 - O algoritmo de Bailey-Borwein-Plouffe permite calcular o n-enésimo dígito hexadecimal de Pi sem precisar calcular os dígitos anteriores: [BBP - code](./PI/lib/BBP.ml)
 - O algoritmo de Monte Carlo utiliza esstatística e probabilidade para estimar o valor de PI: [Monte Carlo - code](./PI/lib/Monte_Carlo.ml)
+- O algoritmo da agulha de Buffon é uma experiência de probabilidade geométrica proposta no século XVIII, que serve para estimar o valor de pi: [Buffon - code](./PI/lib/Buffon.ml)
+
 
 ## Séries Infinitas
 
