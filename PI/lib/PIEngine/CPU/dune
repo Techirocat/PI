@@ -1,0 +1,9 @@
+(library
+ (name pi_cpu)
+ (modules (:standard \ test_pi run_chudnovsky))
+ (libraries zarith unix))
+
+(executables
+ (names test_pi run_chudnovsky)
+ (modules test_pi run_chudnovsky)
+ (libraries pi_cpu))
