@@ -1,0 +1,8 @@
+(executables
+ (names
+  babilonia egipto Arquimedes Liu_Hui Zu_Chongzhi Madhava Al_Kashi
+  Ludolph_Van_Ceulen Snell John_Machin Abraham_Sharp Jurij_Vega
+  Thomas_Clausen Zacharias_Dase William_Rutherford William_Shanks
+  D_F_Ferguson Chudnovsky BBP BBP_no_zarith Monte_Carlo Leibniz
+  Nilkantha John_Wallis Buffon)
+ (libraries zarith PI))
