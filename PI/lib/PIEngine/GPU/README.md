@@ -1,0 +1,1 @@
+# Chudnovsky em paralelo (GPU)
