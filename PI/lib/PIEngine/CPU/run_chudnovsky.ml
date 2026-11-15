@@ -1,6 +1,9 @@
 let file = "pi.txt"
 
 let () =
+
+  Gc.set { (Gc.get ()) with space_overhead = 40 };
+  
   let digits =
     if Array.length Sys.argv > 1 then 
       int_of_string Sys.argv.(1) 
