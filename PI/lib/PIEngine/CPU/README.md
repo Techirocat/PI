@@ -65,3 +65,4 @@ dune exec ./test_pi.exe -- help
 - `[PASS]` — os últimos 50 dígitos estão corretos
 - `[FAIL]` — os dígitos não batem certo com a referência
 - `[AVISO]` — não existe referência para esse número de dígitos
+
